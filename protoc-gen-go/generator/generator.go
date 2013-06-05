@@ -1,7 +1,7 @@
 // Go support for Protocol Buffers - Google's data interchange format
 //
 // Copyright 2010 The Go Authors.  All rights reserved.
-// http://code.google.com/p/goprotobuf/
+// http://github.com/asinbow/goprotobuf/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -50,9 +50,9 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"code.google.com/p/goprotobuf/proto"
-	descriptor "code.google.com/p/goprotobuf/protoc-gen-go/descriptor"
-	plugin "code.google.com/p/goprotobuf/protoc-gen-go/plugin"
+	"github.com/asinbow/goprotobuf/proto"
+	descriptor "github.com/asinbow/goprotobuf/protoc-gen-go/descriptor"
+	plugin "github.com/asinbow/goprotobuf/protoc-gen-go/plugin"
 )
 
 // A Plugin provides functionality to add to the output during Go code generation,
@@ -1012,7 +1012,7 @@ func (g *Generator) generateImports() {
 	// reference it later. The same argument applies to the math package,
 	// for handling bit patterns for floating-point numbers, and to the
 	// json package, for symbolic names of enum values for JSON marshaling.
-	g.P("import " + g.Pkg["proto"] + " " + strconv.Quote(g.ImportPrefix+"code.google.com/p/goprotobuf/proto"))
+	g.P("import " + g.Pkg["proto"] + " " + strconv.Quote(g.ImportPrefix+"github.com/asinbow/goprotobuf/proto"))
 	g.P("import " + g.Pkg["json"] + ` "encoding/json"`)
 	g.P("import " + g.Pkg["math"] + ` "math"`)
 	for i, s := range g.file.Dependency {

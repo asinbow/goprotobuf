@@ -1,7 +1,7 @@
 // Go support for Protocol Buffers - Google's data interchange format
 //
 // Copyright 2010 The Go Authors.  All rights reserved.
-// http://code.google.com/p/goprotobuf/
+// http://github.com/asinbow/goprotobuf/
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -43,8 +43,8 @@ import (
 	"io/ioutil"
 	"os"
 
-	"code.google.com/p/goprotobuf/proto"
-	"code.google.com/p/goprotobuf/protoc-gen-go/generator"
+	"github.com/asinbow/goprotobuf/proto"
+	"github.com/asinbow/goprotobuf/protoc-gen-go/generator"
 )
 
 func main() {

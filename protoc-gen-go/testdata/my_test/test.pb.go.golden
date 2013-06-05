@@ -4,7 +4,7 @@
 
 package my_test
 
-import proto "code.google.com/p/goprotobuf/proto"
+import proto "github.com/asinbow/goprotobuf/proto"
 import json "encoding/json"
 import math "math"
 
